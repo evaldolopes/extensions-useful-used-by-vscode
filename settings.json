@@ -55,7 +55,7 @@
         "*.php": "php"
     },
     "php.validate.enable": true,
-    "window.zoomLevel": 2,
+    "window.zoomLevel": 1,
     "github.gitAuthentication": false,
     "terminal.integrated.defaultProfile.windows": "Command Prompt",
     "terminal.external.windowsExec": "${env:windir}\\System32\\cmd.exe",
@@ -86,10 +86,10 @@
     "workbench.startupEditor": "none",
     "workbench.statusBar.visible": true,
     "editor.minimap.enabled": false,
-    "editor.detectIndentation": false,
-    "editor.tabSize": 4,
-    "editor.formatOnSave": true,
-    "editor.wordSeparators": "`~!@#%^&*()-=+[{]}\\|;:'\",.<>/?",
+    "editor.detectIndentation": true,
+    // "editor.tabSize": 4,
+    // "editor.formatOnSave": true, //
+    // "editor.wordSeparators": "`~!@#%^&*()-=+[{]}\\|;:'\",.<>/?",
     "editor.bracketPairColorization.enabled": true,
     "editor.guides.bracketPairs": true,
     "[json]": {
@@ -119,8 +119,11 @@
     "gitlens.blame.heatmap.enabled": false,
     "gitlens.codeLens.enabled": false,
     "files.trimTrailingWhitespace": true,
+    "diffEditor.ignoreTrimWhitespace": false,
     // "intelephense.environment.phpVersion": "7.4.30",
     // "php.validate.executablePath": "D:\\laragon\\bin\\php\\php-7.4.30-Win32-vc15-x64\\php.exe",
     "intelephense.environment.phpVersion": "8.1.8",
-    // "php.validate.executablePath": "D:\\laragon\\bin\\php\\php-8.1.9-Win32-vc16-x64\\php.exe",
+    "php.validate.executablePath": "D:\\laragon\\bin\\php\\php-8.1.8-Win32-vs16-x64\\php.exe",
+    "enableTelemetry": true,
+    "todohighlight.isEnable": false,
 }
