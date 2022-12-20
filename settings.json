@@ -1,16 +1,17 @@
 {
+    // WORKBENCH
     "workbench.iconTheme": "vscode-icons",
+    "workbench.sideBar.location": "right",
+    "workbench.startupEditor": "none",
+    "workbench.statusBar.visible": true,
+
+    "prettier.printWidth": 120,
+
     "[html]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
-    "[php]": {
-        "editor.defaultFormatter": "bmewburn.vscode-intelephense-client"
-    },
     "[css]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "[blade]": {
-        // "editor.defaultFormatter": "animus-coop.vscode-phpstorm-formatter"
     },
     "explorer.confirmDelete": true,
     "[scss]": {
@@ -19,16 +20,24 @@
     "[javascript]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
-    "prettier.printWidth": 120,
     "[vue]": {
         "editor.defaultFormatter": "octref.vetur"
     },
+        "[json]": {
+        "editor.quickSuggestions": {
+            "strings": true
+        },
+        "gitlens.codeLens.scopes": [
+            "document"
+        ],
+        "editor.defaultFormatter": "vscode.json-language-features",
+        "editor.suggest.insertMode": "replace"
+    },
+
     "editor.formatOnPaste": true,
     "editor.formatOnType": true,
     "editor.suggestSelection": "first",
     "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
-    "powermode.enabled": false,
-    //   "powermode.presets": "flames",
     "editor.linkedEditing": true,
     "[dart]": {
         "editor.formatOnSave": true,
@@ -42,7 +51,7 @@
         "editor.tabCompletion": "onlySnippets",
         "editor.wordBasedSuggestions": false
     },
-    "editor.fontFamily": "'Fira Code' ,Consolas, 'Courier New', monospace",
+    "editor.fontFamily": "'Fira Code', Consolas, 'Courier New', monospace",
     "editor.fontSize": 12,
     "editor.fontLigatures": true,
     "workbench.colorCustomizations": {
@@ -56,11 +65,11 @@
     },
     "php.validate.enable": true,
     "window.zoomLevel": 1,
-    "github.gitAuthentication": false,
+
     "terminal.integrated.defaultProfile.windows": "Command Prompt",
     "terminal.external.windowsExec": "${env:windir}\\System32\\cmd.exe",
     "terminal.integrated.env.windows": {
-        "CMDER_ROOT": "D:\\laragon\\bin\\cmder"
+        "CMDER_ROOT": "C:\\laragon\\bin\\cmder"
     },
     "terminal.integrated.profiles.windows": {
         "PowerShell": {
@@ -81,29 +90,22 @@
             "source": "Git Bash"
         }
     },
-    "git.confirmSync": false,
-    "workbench.sideBar.location": "left",
-    "workbench.startupEditor": "none",
-    "workbench.statusBar.visible": true,
+
     "editor.minimap.enabled": false,
     "editor.detectIndentation": true,
-    // "editor.tabSize": 4,
-    // "editor.formatOnSave": true, //
+    "editor.tabSize": 4,
+    "editor.formatOnSave": true, //
     // "editor.wordSeparators": "`~!@#%^&*()-=+[{]}\\|;:'\",.<>/?",
     "editor.bracketPairColorization.enabled": true,
     "editor.guides.bracketPairs": true,
-    "[json]": {
-        "editor.quickSuggestions": {
-            "strings": true
-        },
-        "gitlens.codeLens.scopes": [
-            "document"
-        ],
-        "editor.defaultFormatter": "vscode.json-language-features",
-        "editor.suggest.insertMode": "replace"
-    },
+
     "javascript.preferences.quoteStyle": "single",
     "javascript.updateImportsOnFileMove.enabled": "always",
+
+    // GIT
+    "git.confirmSync": false,
+    "git.autofetch": true,
+    "github.gitAuthentication": false,
     "gitlens.statusBar.enabled": false,
     "gitlens.hovers.enabled": false,
     "gitlens.blame.format": "${author|10} ${date}",
@@ -120,10 +122,32 @@
     "gitlens.codeLens.enabled": false,
     "files.trimTrailingWhitespace": true,
     "diffEditor.ignoreTrimWhitespace": false,
-    // "intelephense.environment.phpVersion": "7.4.30",
-    // "php.validate.executablePath": "D:\\laragon\\bin\\php\\php-7.4.30-Win32-vc15-x64\\php.exe",
-    "intelephense.environment.phpVersion": "8.1.8",
-    "php.validate.executablePath": "D:\\laragon\\bin\\php\\php-8.1.8-Win32-vs16-x64\\php.exe",
+
     "enableTelemetry": true,
     "todohighlight.isEnable": false,
+
+    //POWER MODE
+    "powermode.enabled": true,
+    "powermode.presets": "flames",
+    "powermode.combo.counterEnabled": "hide",
+    "powermode.combo.location": "off",
+    "powermode.combo.timerEnabled": "hide",
+
+
+    //PHP // INTELEPHENSE
+    "[php]": {
+        "editor.defaultFormatter": "bmewburn.vscode-intelephense-client"
+    },
+    "intelephense.telemetry.enabled": false,
+    "intelephense.diagnostics.undefinedSymbols": false,
+    "intelephense.compatibility.correctForBaseClassStaticUnionTypes": false,
+    "intelephense.files.associations": [
+        "*.php",
+        "*.blade"
+    ],
+    // "intelephense.environment.phpVersion": "7.4.30",
+    // "php.validate.executablePath": "D:\\laragon\\bin\\php\\php-7.4.30-Win32-vc15-x64\\php.exe",
+    "intelephense.environment.phpVersion": "8.1",
+    "php.validate.executablePath": "C:\\laragon\\bin\\php\\php-8.1.13-Win32-vs16-x64\\php.exe",
+    "tabnine.experimentalAutoImports": true,
 }
